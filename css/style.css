@@ -481,7 +481,7 @@ hr {
 
 @media (max-width: 800px) {
   body {
-    background-image: url(../img/bk/banner-mobile.svg);
+    background-image: url(../img/bk/banner-mobile.png);
     background-position: top center;
     background-size: contain;
     background-repeat: no-repeat;

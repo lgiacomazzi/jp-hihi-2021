@@ -47,6 +47,8 @@ body {
   font-weight: normal;
   color: var(--white);
   background-color: var(--background-blue);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -199,8 +201,9 @@ p {
 }
 
 img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  /* width: 100%;
+  height: auto; */
 }
 
 .btn {
@@ -255,6 +258,13 @@ img {
   background-position: center center;
 }
 
+.bg-blue {
+  background: url(../img/bk/bk-blue.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .bg-blue-up {
   background: url(../img/bk/bk-blue-up.svg);
   background-repeat: no-repeat;
@@ -267,6 +277,16 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.bg-blue-down:after {
+  /* content: url(../img/svg/awards.svg); */
+  position: absolute;
+  margin-top: 444px;
+  width: 100%;
+  text-align: center;
 }
 
 .bg-light-blue {
@@ -388,18 +408,21 @@ section {
   background-size: cover;
 }
 
-@media (max-width: 992px) {
-  section {
-    /* 60 + 68px (navbar) */
-    padding: 80px 0px 60px 0px;
-  }
+#inspira {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: auto;
+  max-width: 900px;
+}
+
+#inspira img {
+  width: 191px;
 }
 
 footer {
   padding: 70px 0px;
   display: block;
-  /* box-shadow: 0px -10px 20px #00000010; */
-  background-size: cover;
 }
 
 footer .redes > a {
@@ -411,4 +434,95 @@ footer .redes > a:focus {
   filter: opacity(0.7);
   color: #97bd30;
   text-decoration: none;
+}
+
+hr {
+  border-color: white;
+  margin: 30px 0px;
+}
+
+@media (max-width: 1200px) {
+  #element-2:after,
+  #element-2:before {
+    content: "";
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 30px 16px;
+  }
+  .flip {
+    flex-direction: column !important;
+  }
+  .flip-invert {
+    flex-direction: column-reverse !important;
+  }
+  .d-flex .w-50 {
+    width: 100% !important;
+  }
+  .w-400,
+  .w-600 {
+    max-width: 100%;
+  }
+  #inspira {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    max-width: 600px;
+  }
+
+  #inspira img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    background-image: url(../img/bk/banner-mobile.svg);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #banner {
+    padding-right: 16px;
+    padding-left: 16px;
+    min-height: 500px;
+    background: url("");
+    background-size: cover;
+    background-position: center center;
+  }
+  .btn {
+    width: 100%;
+  }
+  .logo-colegio {
+    max-width: 40%;
+  }
+  .logo-campanha {
+    max-width: 90%;
+  }
+  #banner h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  #series {
+    display: none !important;
+  }
+  #hello div {
+    padding: 30px 30px;
+  }
+  .element-0 {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .lead {
+    font-size: 20px;
+  }
 }

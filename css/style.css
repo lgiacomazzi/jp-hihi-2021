@@ -355,6 +355,7 @@ img {
 
 .tranf {
   display: flex;
+  align-items: center;
   max-width: 1000px;
   margin: auto;
   width: 100%;
@@ -557,5 +558,9 @@ hr {
   #plataforma-a img {
     margin-bottom: 20px;
     height: 40px;
+  }
+  #logo_higi_footer {
+    height: 100px;
+    margin-top: 30px;
   }
 }

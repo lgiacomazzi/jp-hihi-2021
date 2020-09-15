@@ -1,0 +1,418 @@
+:root {
+  --white: #ffffff;
+  --dark: #05161e;
+
+  --green: #99cc33;
+  --lighter-green: #c2e085;
+  --light-green: #ebf5d6;
+
+  --brand-blue: #0b366a;
+  --blue: #1c74a2;
+  --lighter-blue: #44aadf;
+  --light-blue: #f2f9fd;
+  --dark-blue: #0d354a;
+  --background-blue: #061f3c;
+
+  --gray: #c2cfd6;
+  --dark-gray: #a3b7c2;
+  --darker-gray: #859fad;
+
+  --padding-y: 100px;
+}
+
+@font-face {
+  font-family: "Marine Rounded";
+  src: url("../fonts/MarineRounded-UPBlack.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marine Rounded";
+  src: url("../fonts/MarineRounded-Light.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--white);
+  background-color: var(--background-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Marine Rounded";
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+@media (max-width: 992px) {
+  h2 {
+    /* font-size: 32px; */
+  }
+  h3 {
+    /* font-size: 24px; */
+  }
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: inherit;
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.logo-colegio {
+  width: 200px;
+}
+
+.logo-campanha {
+  width: 525px;
+}
+
+#banner {
+  padding-top: 60px;
+  background: url(../img/bk/banner.png);
+  background-size: cover;
+  background-position: center center;
+  min-height: 951px;
+}
+
+#banner h1 {
+  margin-bottom: 32px;
+}
+
+#series p {
+  font-size: 32px;
+  margin: 0px 20px;
+}
+
+.conheca {
+  margin-top: 20px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.conheca:after {
+  content: url(../img/svg/down-link.svg);
+  width: 26px;
+  position: absolute;
+  margin-top: 70px;
+  -webkit-animation: bounce 1s infinite; /* Safari 4+ */
+  -moz-animation: bounce 1s infinite; /* Fx 5+ */
+  -o-animation: bounce 1s infinite; /* Opera 12+ */
+  animation: bounce 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    margin-top: 70px;
+  }
+  50% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 70px;
+  }
+}
+@-moz-keyframes bounce {
+  0% {
+    margin-top: 70px;
+  }
+  50% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 70px;
+  }
+}
+@-o-keyframes bounce {
+  0% {
+    margin-top: 70px;
+  }
+  50% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 70px;
+  }
+}
+@keyframes bounce {
+  0% {
+    margin-top: 70px;
+  }
+  50% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 70px;
+  }
+}
+
+.conheca:hover {
+  color: inherit;
+}
+
+.lead {
+  font-family: "Marine Rounded";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 25px 20px;
+  transition: 600ms;
+  border: none;
+  font-weight: bold;
+}
+
+.btn:after {
+  content: url(../img/svg/right-link.svg);
+  margin-left: 10px;
+}
+
+.btn.btn-primary {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.btn.btn-green {
+  color: var(--dark-blue);
+  background-color: var(--green);
+}
+
+.btn.btn-light,
+.btn.btn-white {
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+.btn:focus,
+.btn:hover {
+  opacity: 0.7;
+  border: none;
+}
+
+.text-dark {
+  color: var(--brand-blue) !important;
+}
+
+.text-green {
+  color: var(--green) !important;
+}
+
+.bg-green {
+  background: url(../img/bk/bk-green.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-blue-up {
+  background: url(../img/bk/bk-blue-up.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-blue-down {
+  background: url(../img/bk/bk-blue-down.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-light-blue {
+  background: url(../img/bk/bk-light-blue.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+  color: var(--dark-blue);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.element-0 {
+  max-width: 80px;
+}
+
+#element-2:after {
+  content: url(../img/svg/element-2.svg);
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -120px;
+}
+
+#element-2:before {
+  content: url(../img/svg/element-1.svg);
+  position: absolute;
+  margin-left: -240px;
+  margin-top: 0px;
+}
+
+.w-400 {
+  max-width: 400px;
+}
+
+.w-600 {
+  max-width: 600px;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.tranf {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.tranf img {
+  height: auto;
+}
+
+.rounded {
+  border-radius: 1em !important;
+}
+
+.link {
+  line-height: 20px;
+  transition: 600ms;
+  border: none;
+  display: block;
+  font-weight: bold;
+  color: var(--lighter-blue);
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.link-green {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.link-green:after {
+  content: url(../img/svg/right-link-green.svg);
+  margin-left: 10px;
+}
+
+.link:hover,
+.link:focus {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+#location {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#location:before {
+  content: url(../img/svg/location.svg);
+  position: relative;
+  margin-right: 10px;
+  top: 7px;
+}
+
+.py {
+  padding: var(--padding-y) 0px var(--padding-y) 0px;
+}
+
+section {
+  padding: var(--padding-y) 0px var(--padding-y) 0px;
+  display: block;
+  /* box-shadow: 0px -10px 20px #00000010; */
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  section {
+    /* 60 + 68px (navbar) */
+    padding: 80px 0px 60px 0px;
+  }
+}
+
+footer {
+  padding: 70px 0px;
+  display: block;
+  /* box-shadow: 0px -10px 20px #00000010; */
+  background-size: cover;
+}
+
+footer .redes > a {
+  transition: 300ms;
+}
+
+footer .redes > a:hover,
+footer .redes > a:focus {
+  filter: opacity(0.7);
+  color: #97bd30;
+  text-decoration: none;
+}

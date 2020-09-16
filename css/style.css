@@ -437,7 +437,17 @@ section {
 }
 
 #localizacao:before {
-  /* content: url(../img/svg/element-0.svg); */
+  content: url(../img/svg/element-0.svg);
+  position: absolute;
+  right: 10%;
+  margin-top: -115px;
+}
+
+#localizacao:after {
+  content: url(../img/svg/element-3.svg);
+  position: absolute;
+  left: 5%;
+  margin-top: 500px;
 }
 
 footer {
@@ -464,6 +474,8 @@ hr {
 }
 
 @media (max-width: 1200px) {
+  #localizacao:after,
+  #localizacao:before,
   #element-2:after,
   #element-2:before {
     content: "";

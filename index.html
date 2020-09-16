@@ -68,6 +68,9 @@
       type="image/png"
       crossorigin
     />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -78,11 +81,12 @@
         class="logo-colegio"
       />
       <img
+        data-aos="zoom-in-up"
         src="./img/svg/logo_campanha.svg"
         alt="Logo Camapha Higi 2021"
         class="logo-campanha"
       />
-      <h1>Ciclo de Matrículas 2021</h1>
+      <h1 data-aos="fade-down">Ciclo de Matrículas 2021</h1>
       <div
         id="series"
         class="d-flex align-items-center flex-row justify-content-center text-green"
@@ -120,7 +124,7 @@
     </section>
     <section class="d-flex bg-light-blue flip">
       <div class="w-50 w-400 mr-lg-5 ml-auto">
-        <h2>
+        <h2 data-aos="fade-right">
           Educação para <br /><span class="text-green">novos tempos</span>
         </h2>
         <p class="lead w-600">
@@ -145,7 +149,7 @@
         <img src="./img/stock/projeto-higi.png" alt="" />
       </div>
       <div class="w-50 w-600 ml-lg-5 mr-auto">
-        <h2 class="w-600">
+        <h2 class="w-600" data-aos="fade-right">
           Um projeto educacional de sucesso, quem tem gerado
           <span class="text-green">resultados efetivos</span>
         </h2>
@@ -163,7 +167,7 @@
         <img src="./img/stock/tranf1.png" alt="Fotos dos Alunos" />
         <img src="./img/stock/tranf2.png" alt=" em casa" />
       </div>
-      <h2 class="w-600 mx-auto text-lg-center">
+      <h2 class="w-600 mx-auto text-lg-center" data-aos="zoom-in-right">
         <span class="text-green">Transformação digital​</span> para uma educação
         transformadora
       </h2>
@@ -225,7 +229,7 @@
       </div>
     </section>
     <section id="localizacao" class="d-flex flip text-center text-lg-left">
-      <div class="w-50 w-600 mr-lg-5 ml-auto">
+      <div class="w-50 w-600 mr-lg-5 ml-auto" data-aos="fade-right">
         <img class="rounded" src="./img/stock/local.png" alt="" />
       </div>
       <div class="w-50 w-600 ml-lg-5 mr-auto">
@@ -354,5 +358,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

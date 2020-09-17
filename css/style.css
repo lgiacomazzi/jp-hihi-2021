@@ -528,7 +528,7 @@ hr {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
   body {
     background-image: url(../img/bk/banner-mobile.png);
     background-position: top center;
@@ -539,7 +539,7 @@ hr {
     padding-right: 16px;
     padding-left: 16px;
     min-height: 500px;
-    background: url("");
+    background: none;
     background-size: cover;
     background-position: center center;
   }

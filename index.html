@@ -8,7 +8,13 @@
       Educação para Transformar | Ciclo de Matrículas 2021 | Colégio João Paulo
       I Higienópolis
     </title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Nosso processo de entrevistas para preenchimento das vagas de 2021
+    está aberto. Quer saber como a sua família pode fazer parte da comunidade escolar
+    do Higi? Preencha o formulário nesta página para que a nossa equipe de atendimento
+    entre em contato."
+    />
 
     <meta
       property="og:title"
@@ -84,6 +90,20 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics Copiado de includes/analytics.php -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-131021402-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-131021402-1");
+    </script>
   </head>
 
   <body>
@@ -133,7 +153,15 @@
         contemporâneas que garantam uma
         <span class="text-dark">formação humana integral.</span>
       </h3>
-      <a href="" class="btn btn-white mb-5">Reserve a sua vaga!</a>
+      <button
+        type="button"
+        class="btn btn-white mb-5"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Reserve a sua vaga!
+      </button>
+      <!-- <a href="" class="btn btn-white mb-5">Reserve a sua vaga!</a> -->
     </section>
     <section class="d-flex bg-light-blue flip" data-aos="fade-left">
       <div class="w-50 w-400 mr-lg-5 ml-auto">
@@ -170,9 +198,17 @@
           Nossos alunos têm conquistado grandes resultados em concursos, Enem e
           vestibulares.
         </p>
-        <a href="" class="btn btn-green mb-5"
-          >Venha construir a sua história!</a
+        <button
+          type="button"
+          class="btn btn-green mb-5"
+          data-toggle="modal"
+          data-target="#exampleModal"
         >
+          Venha construir a sua história!
+        </button>
+        <!-- <a href="" class="btn btn-green mb-5"
+          >Venha construir a sua história!</a
+        > -->
       </div>
     </section>
     <section data-aos="zoom-in-right">
@@ -375,6 +411,42 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script>
       AOS.init();
     </script>

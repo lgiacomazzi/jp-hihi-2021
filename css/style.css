@@ -502,8 +502,8 @@ hr {
 #bottom-bar {
   width: 100%;
   position: fixed;
+  bottom: 0px;
   /* height: 60px; */
-  background: var(--white);
   visibility: hidden;
   transition: 600ms;
   text-align: center;
@@ -511,7 +511,6 @@ hr {
 
 #bottom-bar .btn {
   margin: 10px 0px !important;
-  width: 95%;
 }
 
 @media (max-width: 1400px) {

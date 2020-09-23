@@ -491,6 +491,11 @@ hr {
   margin: 30px 0px;
 }
 
+.modal-content {
+  max-width: 480px;
+  margin: auto;
+}
+
 .modal-body iframe {
   border: none;
 }

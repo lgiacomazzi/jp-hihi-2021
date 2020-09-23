@@ -290,9 +290,9 @@ img {
 }
 
 .bg-blue-down:after {
-  /* content: url(../img/svg/awards.svg); */
+  content: url(../img/svg/awards.svg);
   position: absolute;
-  margin-top: 444px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
 }
@@ -498,6 +498,8 @@ hr {
 .modal-content {
   max-width: 480px;
   margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .modal-body iframe {
@@ -539,7 +541,8 @@ hr {
   #element-2:after,
   #element-2:before,
   #element-3:after,
-  #element-3:before {
+  #element-3:before,
+  .bg-blue-down:after {
     content: "";
   }
 }
@@ -607,6 +610,7 @@ hr {
   #banner h1 {
     font-size: 32px;
     text-align: center;
+    margin: 10px 0px;
   }
   #series {
     display: none !important;

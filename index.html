@@ -307,7 +307,7 @@
         >
       </div>
     </section>
-    <section class="d-flex bg-light-blue flip-invert">
+    <section class="d-flex bg-light-blue flip-invert" data-aos="fade-left">
       <div class="w-50 w-400 ml-auto mr-lg-5">
         <h2>
           Protocolo de <span class="text-green">segurança</span> para aulas
@@ -324,7 +324,7 @@
         <img class="rounded" src="./img/stock/seguranca.png" alt="" />
       </div>
     </section>
-    <section class="d-flex flip">
+    <section class="d-flex flip" data-aos="zoom-in-up">
       <div class="w-50 w-600 text-center mx-auto" id="element-3">
         <h2 class="text-green mb-0">Ciclo de Matrículas para 2021</h2>
         <h3 class="mt-2">
@@ -476,9 +476,10 @@
           document.body.scrollTop > 500 ||
           document.documentElement.scrollTop > 500
         ) {
-          document.getElementById("bottom-bar").style.right = "0px";
+          document.getElementById("bottom-bar").style.transform = "none";
         } else {
-          document.getElementById("bottom-bar").style.right = "-100vw";
+          document.getElementById("bottom-bar").style.transform =
+            "translateY(100vw)";
         }
       }
     </script>

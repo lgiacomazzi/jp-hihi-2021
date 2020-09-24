@@ -295,7 +295,7 @@ img {
 }
 
 .bg-blue-down:after {
-  content: url(../img/svg/awards.svg);
+  /* content: url(../img/svg/awards.svg); */
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -329,7 +329,7 @@ img {
 }
 
 .element-0 {
-  max-width: 80px;
+  max-width: 100px;
 }
 
 #element-2:after {
@@ -445,7 +445,7 @@ img {
 }
 
 section {
-  padding: var(--padding-y) 30px var(--padding-y) 30px;
+  padding: var(--padding-y) 60px var(--padding-y) 60px;
   display: block;
   /* box-shadow: 0px -10px 20px #00000010; */
   background-size: cover;
@@ -505,13 +505,17 @@ hr {
   margin: auto;
   border-radius: 20px;
   overflow: hidden;
+  border: none;
 }
 
 .modal-body iframe {
   border: none;
 }
 
-.modal-body {
+.modal-body,
+.modal-header {
+  padding: 1rem 2rem;
+  border: none;
   background-color: var(--dark-gray);
 }
 
@@ -561,6 +565,9 @@ hr {
   }
   .flip-invert {
     flex-direction: column-reverse !important;
+  }
+  .element-0 {
+    margin-bottom: 20px;
   }
   .d-flex .w-50 {
     width: 100% !important;
@@ -624,7 +631,7 @@ hr {
     padding: 30px 30px;
   }
   .element-0 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   h2 {
     font-size: 32px;
